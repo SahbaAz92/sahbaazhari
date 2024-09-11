@@ -1,0 +1,45 @@
+/* About Me section */
+.about-me {
+  padding: 80px 20px;
+  background-color: #FFFFFF;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about-me-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-me-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-me-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about-me-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-photo img {
+  max-width: 100%;  /* Keeps the photo responsive */
+  height: auto;     /* Maintains aspect ratio */
+  width: 300px;
+  box-shadow: none;    /* Set a fixed width */
+  border-radius: 10px;
+}

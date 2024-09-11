@@ -1,0 +1,21 @@
+/* Introduction section */
+.intro-section {
+  padding: 60px 20px;
+  color: #333333;
+  text-align: left;
+}
+
+.intro-heading {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.intro-text {
+  margin-top: 10px;
+}
+
+.intro-info {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #666666;

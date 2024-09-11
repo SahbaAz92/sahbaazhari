@@ -1,0 +1,41 @@
+/* Skills Section Styling */
+/* Skills Section Styling */
+.skills-section {
+  padding: 20px;
+  background-color: #f4f4f4; /* Light grey background for the section */
+}
+
+.skills-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows skills to wrap onto new lines if necessary */
+  justify-content: center; /* Center align the list */
+  gap: 15px; /* Space between skills */
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.skill-item {
+  font-size: 16px; /* Adjust font size */
+  color: #555;
+  padding: 5px 10px; /* Add padding for spacing */
+  border-radius: 5px; /* Rounded corners for visual appeal */
+  background-color: #fff; /* White background for contrast */
+  border: 1px solid #ddd; /* Light border for separation */
+}

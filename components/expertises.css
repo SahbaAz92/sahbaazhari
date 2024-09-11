@@ -1,0 +1,14 @@
+.expertise-links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.expertise-div {
+  padding:20px 20px;
+}
+
+.expertise-a:hover {
+    color:rgb(103, 103, 103);
+    border-bottom: 2px solid rgb(175, 175, 175);
+}
+

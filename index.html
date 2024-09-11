@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="showcase.css">
+
+    <title>Sahba Azhari</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styling */
+        header.navbar {
+            background-color: #00033d;
+            color: white;
+            padding: 30px 30px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-logo {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .navbar-nav {
+            display: flex;
+        }
+
+        .navbar-ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        .navbar-li {
+            margin: 0;
+        }
+
+        .navbar-a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar-a:hover {
+            background-color: #333;
+        }
+
+        /* Showcase Tabs and Horizontal Layout */
+        .showcase-tabs {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .showcase-tabs div {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #00033d;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .showcase-tabs div:hover {
+            background-color: #333;
+        }
+
+        .showcase-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Individual sections */
+        .showcase-content-item {
+            flex: 1;
+            padding: 20px;
+            background-color: #f4f4f4;
+            margin-right: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .showcase-content-item.active {
+            display: block;
+        }
+
+        .showcase-content-item:last-child {
+            margin-right: 0;
+        }
+
+        /* Technologies styling */
+        .technology-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            justify-content: space-around;
+        }
+
+        .technology-item {
+            margin: 10px;
+        }
+
+        .technology-item img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* About Me Section */
+        .about-me {
+            padding: 20px;
+        }
+
+        .about-me-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .about-me-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-me-photo img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contact Section */
+        .contact-container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            text-decoration: none;
+            background-color: #00033d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00033d;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Skills Section Styling */
+        .skills-section {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .skills-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .skills-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills-header h2 {
+            font-size: 28px;
+            color: #333;
+            margin: 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .skill-category {
+            flex: 1 1 200px;
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .skill-category h3 {
+            font-size: 20px;
+            color: #00033d;
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skill-list li {
+            font-size: 16px;
+            color: #555;
+            padding: 3px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <h3 class="navbar-logo">Sahba Azhari</h3>
+        <nav>
+            <ul class="navbar-ul">
+                <li class="navbar-li"><a class="navbar-a" href="#showcase">Showcase</a></li>
+                <li class="navbar-li"><a class="navbar-a" href="#about">About</a></li>
+                <li class="navbar-li"><a class="navbar-a" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <h1 class="intro-heading">Hello there,</h1>
+            <h1 class="intro-heading">I'm Sahba Azhari, a UX/UI Designer and a Front-end Developer</h1>
+            <div class="intro-text">
+                <p class="intro-info"></p>
+            </div>
+        </section>
+
+        <section id="showcase" class="showcase">
+            <div class="showcase-tabs">
+                <div class="expertise-a" data-target="projects">Projects</div>
+                <div class="expertise-a" data-target="technologies">Technologies</div>
+                <div class="expertise-a" data-target="skills">Skills</div>
+            </div>
+            <div class="showcase-content">
+                <div id="projects" class="showcase-content-item">
+                    <ul>
+                        <li><a href="https://habit-pulse-96d1eb86f309.herokuapp.com/" target="_blank" rel="noopener noreferrer">HabitPulse</a></li>
+                        <li><a href="https://camera-rentals-1efdbd87333e.herokuapp.com/" target="_blank" rel="noopener noreferrer">Camera Rentals</a></li>
+                        <li><a href="https://www.behance.net/gallery/207531671/Online-Learning-Mobile-App" target="_blank" rel="noopener noreferrer">LearnHub</a></li>
+                        <li><a href="https://www.behance.net/gallery/207081873/Food-Delivery-App" target="_blank" rel="noopener noreferrer">FoodGo</a></li>
+                    </ul>
+                </div>
+                <div id="technologies" class="showcase-content-item">
+                    <ul class="technology-list">
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452045/js.svg" alt="JavaScript Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/353869/heroku-icon.svg" alt="Heroku Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/342071/notion.svg" alt="Notion Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/353935/jira.svg" alt="Jira Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452202/figma.svg" alt="Figma Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452151/adobe-xd.svg" alt="Adobe XD Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452099/sketch.svg" alt="Sketch Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452230/invision.svg" alt="InVision Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/473728/miro.svg" alt="Miro Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/303373/google-analytics-3-logo.svg" alt="Google Analytics Icon"></li>
+                        <li class="technology-item"><img src="https://www.svgrepo.com/show/452095/ruby.svg" alt="Ruby Icon"></li>
+                    </ul>
+                </div>
+                <section id="skills" class="showcase-content-item">
+                    <div class="skills-section">
+                        <div class="skills-container">
+                            <div class="skills-header">
+                            </div>
+                            <ul class="skills-list">
+                                <li class="skill-item">HTML5</li>
+                                <li class="skill-item">CSS3</li>
+                                <li class="skill-item">JavaScript</li>
+                                <li class="skill-item">Ruby on Rails</li>
+                                <li class="skill-item">APIs</li>
+                                <li class="skill-item">SQL Databases</li>
+                                <li class="skill-item">MVC Architecture</li>
+                                <li class="skill-item">User-Centered Design</li>
+                                <li class="skill-item">Wireframing</li>
+                                <li class="skill-item">Prototyping</li>
+                                <li class="skill-item">Visual Design</li>
+                                <li class="skill-item">Usability Testing</li>
+                                <li class="skill-item">Agile Methodologies</li>
+                                <li class="skill-item">Product Roadmapping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="about" class="about-me">
+            <div class="about-me-content">
+                <div class="about-me-text">
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Sahba Azhari, and my journey began with a focus on UX and UI design, which sparked my interest in creating better user experiences. To strengthen my technical skills, I completed Le Wagon's 6-month web development bootcamp, where I gained hands-on experience with both front-end and back-end technologies.
+                        <br><br>
+                        Currently, I’m focused on applying my skills in UX/UI development and expanding my knowledge in product management, with the goal of building and deploying web applications in a professional environment.
+                        <br><br>
+                        I enjoy working in teams and approach challenges with a positive attitude. As a fast learner, I’m excited to contribute to a team and help create meaningful, effective solutions.
+                    </p>
+                </div>
+                <div class="about-me-photo">
+                    <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1955&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sahba Azhari">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <p>Whether you have an opportunity or just want to say hi, feel free to reach out!</p>
+                <a class="btn" href="mailto:sahbaazhari92@gmail.com">Get in Touch</a>
+                <!-- Social Media Links -->
+                <div class="social-links">
+                    <a href="https://github.com/SahbaAz92" target="_blank" class="social-link" rel="noopener noreferrer">
+                        <img src="https://www.svgrepo.com/show/512317/github-142.svg" alt="GitHub" width="30" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sahba-azhari-a52b29259/" target="_blank" class="social-link" rel="noopener noreferrer">
+                        <img src="https://www.svgrepo.com/show/448234/linkedin.svg" alt="LinkedIn" width="30" height="30">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sahba Azhari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.expertise-a').forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.expertise-a').forEach(btn => btn.classList.remove('active'));
+
+                // Hide all content items
+                document.querySelectorAll('.showcase-content-item').forEach(item => item.classList.remove('active'));
+
+                // Add active class to the clicked button
+                button.classList.add('active');
+
+                // Show the content item corresponding to the clicked button
+                const targetId = button.getAttribute('data-target');
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

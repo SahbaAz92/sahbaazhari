@@ -1,0 +1,19 @@
+/* Importing CSS files */
+@import url(components/colors.css);
+@import url(components/fonts.css);
+@import url(components/introduction.css);
+@import url(components/links.css);
+@import url(components/navbar.css);
+@import url(components/expertises.css);
+@import url(components/showcase.css);
+@import url(components/about.css);
+@import url(components/contact.css);
+@import url(components/footer.css);
+
+/* Universal Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
